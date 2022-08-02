@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const ProductState = (props) => {
   const host = "http://localhost:5000"
-  const ProductsInitial = []
-  const [Products, setProducts] = useState(ProductsInitial)
+  const ProductsInitial = [];
+  const [Products, setProducts] = useState(ProductsInitial);
 
   // Get all Products
   const getProducts = async () => {

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
-
+import ProductState  from './context/Products/ProductState';
 import { Alert } from './components/Alert';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       
-      
+      <ProductState>
           <Router>
           <Navbar/>
           <Alert alert={alert}/>
@@ -38,7 +38,7 @@ function App() {
             </div>
          
           </Router>
-        
+          </ProductState>
     </>
   );
 
